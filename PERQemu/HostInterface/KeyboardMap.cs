@@ -16,7 +16,7 @@
 // along with PERQemu.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-using SDL2;
+using SDL2.Bindings;
 using System.Collections.Generic;
 
 namespace PERQemu.HostInterface

@@ -19,10 +19,10 @@
 using PERQemu.HostInterface;
 
 using System;
-using System.Windows.Forms;
+//using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Imaging;
-using SDL2;
+using SDL2.Bindings;
 using System.Threading;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
@@ -343,11 +343,12 @@ namespace PERQemu.Display
             _textureLock.ExitWriteLock();
         }
 
+        /*
         void OnMouseWheel(object sender, MouseEventArgs e)
         {
             _clickFlag = e.Delta > 0;
 
-            /*
+            /
             if (_clickFlag)
             {
                 _dispBox.Top = _display.ClientRectangle.Height - VideoController.PERQ_DISPLAYHEIGHT;
@@ -356,8 +357,8 @@ namespace PERQemu.Display
             {
                 _dispBox.Top = 0;
             }
-            */
-        }
+            /
+        }*/
 
         void OnMouseMove(int x, int y)
         {
